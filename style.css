@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+}
+
+body.bg-filmes {
+    background-image: url(assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    padding: 50px;
+}
