@@ -2,7 +2,7 @@ body{
     background-color: black;
 }
 
-body.bg-filmes {
+body.bg_filmes {
     background-image: url(assets/background.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,4 +10,15 @@ body.bg-filmes {
 
 header{
     padding: 50px;
+    background: linear-gradient(
+        180dg,
+        rgba(0, 0, 0, 0.69) 0%,
+        rgba(0,0,0,0) 100%
+    );
+}
+
+header img{
+    height: em;
+    width: 150em;
+    position: top-left;
 }
