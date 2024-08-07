@@ -22,3 +22,10 @@ header img{
     width: 150em;
     position: top-left;
 }
+
+#caixa_login{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    margin-top: 150px;
+    border-radius: 15px;
+}
