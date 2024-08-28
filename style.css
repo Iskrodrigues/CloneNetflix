@@ -66,3 +66,20 @@ body.bg_filmes {
     top: 0;
     background-position: center;
 }
+
+#hero_infos{
+    padding: 0;
+    margin-top: 170px;
+    z-index: 3;
+    position: relative;
+}
+
+#hero_infos img.logo{
+    margin-bottom: 50px;
+    width: 500px;
+
+}
+
+#hero_infos h1{
+    margin-bottom: 20px;
+}
