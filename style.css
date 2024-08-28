@@ -83,3 +83,9 @@ body.bg_filmes {
 #hero_infos h1{
     margin-bottom: 20px;
 }
+
+#hero_infos h1 img{
+    width: 35px;
+    margin-top: -10px;
+    margin-left: 15px;
+}
