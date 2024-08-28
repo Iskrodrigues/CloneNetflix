@@ -1,12 +1,7 @@
+/* Gerais */
 body{
     background-color: black;
-}
-
-body.bg_filmes {
-    background-image: url(assets/background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+} 
 
 header{
     padding: 50px;
@@ -23,9 +18,21 @@ header img{
     position: top-left;
 }
 
+/* Login */
+
+body.bg_filmes {
+    background-image: url(assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
 #caixa_login{
     background: rgba(0, 0, 0, 0.7);
     padding: 30px;
     margin-top: 150px;
     border-radius: 15px;
 }
+
+/* Home */
