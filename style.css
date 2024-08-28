@@ -36,3 +36,18 @@ body.bg_filmes {
 }
 
 /* Home */
+
+.menu_list{
+    list-style: none;
+    padding-left: 0;
+    padding-top: 7px;
+}
+
+.menu_list li{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.menu_list li a {
+    color: #fff;
+}
