@@ -82,6 +82,18 @@ body.bg_filmes {
     background-position: center;
 }
 
+#hero::after{
+    content: '';
+    width: 100%;
+    height: 350px;
+    display: block;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000 100%);
+    position: absoulute;
+    left: 0;
+    z-index: 2;
+    top: calc(700px - 350px);
+}
+
 #hero_infos{
     padding: 0;
     margin-top: 170px;
@@ -106,5 +118,6 @@ body.bg_filmes {
 }
 
 #main-content{
+    margin-bottom: 700px;
     
 }
