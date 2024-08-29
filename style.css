@@ -141,7 +141,7 @@ body.bg_filmes {
     width: 250px;
     margin-right: 10px;
     border-radius: 3px;
-    padding-left: 10px;
+    overflow: hidden;
 }
 
 .filme_info{
