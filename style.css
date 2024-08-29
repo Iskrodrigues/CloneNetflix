@@ -134,6 +134,7 @@ body.bg_filmes {
     padding: 20px 0;
     white-space: nowrap;
     /* display: 1px solid transparent; */
+    border: 1px solid transparent;
 }
 
 .filme_lista::-webkit-scrollbar{
@@ -147,6 +148,9 @@ body.bg_filmes {
     border-radius: 3px;
     overflow: hidden;
     transition: 0.5s;
+    overflow: auto;
+    border: 1px solid transparent;
+    overflow-y: hidden;
 }
 
 .filme:hover{
@@ -175,6 +179,7 @@ body.bg_filmes {
 
 .filme_info .col-12{
     margin-top: 5px;
+    padding-left: 0px;
 }
 
 .filme_info .col-12:first-child{
@@ -190,4 +195,12 @@ body.bg_filmes {
     color: white;
 }
 
+section{
+    margin-bottom: -100px;
+    position: relative;
+}
+
+section:hover{
+    z-index: 9;
+}
 
