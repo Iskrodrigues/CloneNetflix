@@ -136,16 +136,33 @@ body.bg_filmes {
     /* display: 1px solid transparent; */
 }
 
+.filme_lista::-webkit-scrollbar{
+    display: none;
+}
+
 .filme{
     display: inline-block;
     width: 250px;
     margin-right: 10px;
     border-radius: 3px;
     overflow: hidden;
+    transition: 0.5s;
+}
+
+.filme:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 999;
+    transition: 0.5s;
+}
+
+.filme:hover .filme_info{
+    transform: scale(1);
+    transition: 0.5s;
 }
 
 .filme:first-child{
-    margin-left: 70px;
+    margin-left: 110px;
 }
 
 .filme_info{
@@ -153,6 +170,7 @@ body.bg_filmes {
     padding: 10px;
     height: 100px;
     width: 100%;
+    transform: scale(0);
 }
 
 .filme_info .col-12{
