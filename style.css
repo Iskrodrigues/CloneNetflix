@@ -36,6 +36,13 @@ header img{
     color: #fff;
     opacity: 0.8;
 }
+.btn-custom-round {
+    padding: 5px 9px !important;
+}
+
+.opacity-50{
+    opacity: 0.5;
+}
 
 /* Login */
 
@@ -119,5 +126,4 @@ body.bg_filmes {
 
 #main-content{
     margin-top: 700px;
-    
 }
