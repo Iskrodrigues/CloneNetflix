@@ -127,3 +127,45 @@ body.bg_filmes {
 #main-content{
     margin-top: 700px;
 }
+
+.filme_lista{
+    overflow-x: scroll;
+    list-style: none;
+    padding: 20px 0;
+    white-space: nowrap;
+    /* display: 1px solid transparent; */
+}
+
+.filme{
+    display: inline-block;
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.filme_info{
+    background-color: #171717;
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+}
+
+.filme_info .col-12{
+    margin-top: 5px;
+}
+
+.filme_info .col-12:first-child{
+    margin-bottom: 20px;
+}
+
+.filme_info p{
+    color: #737b7b;
+    font-size: 12px;
+}
+
+.filme_info p text{
+    color: white;
+}
+
+
