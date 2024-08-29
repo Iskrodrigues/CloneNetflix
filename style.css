@@ -144,6 +144,10 @@ body.bg_filmes {
     overflow: hidden;
 }
 
+.filme:first-child{
+    margin-left: 70px;
+}
+
 .filme_info{
     background-color: #171717;
     padding: 10px;
