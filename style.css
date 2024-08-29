@@ -88,7 +88,7 @@ body.bg_filmes {
     height: 350px;
     display: block;
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000 100%);
-    position: absoulute;
+    position: absolute;
     left: 0;
     z-index: 2;
     top: calc(700px - 350px);
@@ -118,6 +118,6 @@ body.bg_filmes {
 }
 
 #main-content{
-    margin-bottom: 700px;
+    margin-top: 700px;
     
 }
