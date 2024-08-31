@@ -268,9 +268,15 @@ section:hover{
     color: #fff;
 }
 
-#list_episodeos{
+#lista_episodeos{
     list-style: none;
     padding: 0;
 }
 
-#list
+#lista_episodeos li{
+    padding: 20px;
+}
+
+#lista_episodeos li p {
+    font-size: 13px;
+}
