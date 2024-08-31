@@ -280,3 +280,8 @@ section:hover{
 #lista_episodeos li p {
     font-size: 13px;
 }
+
+#lista_episodeos li:hovver{
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.05) ;
+}
