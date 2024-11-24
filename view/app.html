@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <title>App Filmes</title>
+    <style>
+        pre{
+            padding: 20px;
+            background: #ccc;
+            border-radius: 10px;
+            margin: 20px;
+        }
+    </style>
+
 </head>
+
 <body>
     <div class="container">
+        <pre id="debug"></pre>
+
         <h1>Filmes </h1>
         <form action="" class="jumbotron">
             <div class="row">
@@ -17,7 +30,7 @@
                 </div>
                 <div class="col-3">
                     <label for="">Link</label>
-                    <input onkeyup="atualizarDados()" type="url" class="form-control"  placeholder="URL" id="link">
+                    <input onkeyup="atualizarDados()" type="url" class="form-control" placeholder="URL" id="link">
                 </div>
                 <div class="col-3">
                     <label for="">Categoria</label>
@@ -34,7 +47,7 @@
             </div>
             <br>
             <a href="javascript:void(0)" class=" col-12 btn btn-lg btn-block btn-success">
-                Cadastrar Filme 
+                Cadastrar Filme
             </a>
         </form>
         <br>
@@ -45,7 +58,7 @@
                     <th scope="col">Nome</th>
                     <th scope="col">Categoria</th>
                     <th scope="col">Ano</th>
-                    <th scope="col"class="text-right">Ações</th>
+                    <th scope="col" class="text-right">Ações</th>
                 </tr>
             </thead>
 
@@ -65,17 +78,25 @@
 </body>
 
 <script type="text/javascript">
-    
+
     let dados = {
         titulo: '',
         ano: 0,
         categoria: '',
         link: '',
     }
-    
-    const atualizarDados = () =>{
-        console.log('teste');
-    };
+
+    const atualizarDados = () => {
+        dados = {
+            titulo: document.getElementById('titulo').value,
+            ano: document.getElementById('ano').value,
+            categoria: document.getElementById('categoria').value,
+            link: document.getElementById('link').value,
+        }
+
+        document.getElementById('debug').innerHTML = JSON.stringify(dados)
+    }
 
 </script>
+
 </html>
