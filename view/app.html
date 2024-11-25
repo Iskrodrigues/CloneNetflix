@@ -34,10 +34,10 @@
                 </div>
                 <div class="col-3">
                     <label for="">Categoria</label>
-                    <select onchange="atualizarDados()" name="" class="form-control" id="categoria">
-                        <option value="">Categoria 1</option>
-                        <option value="">Categoria 2</option>
-                        <option value="">Categoria 3</option>
+                    <select id="categoria" onchange="atualizarDados()" name="" class="form-control">
+                        <option>Categoria 1</option>
+                        <option>Categoria 2</option>
+                        <option>Categoria 3</option>
                     </select>
                 </div>
                 <div class="col-2">
@@ -79,6 +79,24 @@
 
 <script type="text/javascript">
 
+    document.addEventListener('click', (e) => {
+        const listaClasse = Array.prototype.slice.call(e.target.classList);
+        if (e.target && listaClasse.includes('acessarFilme')) {
+            const url = e.target.dataset.url;
+            window.open(url, '_blank');
+        }
+
+        if (e.target && listaClasse.includes('excluirFilme')) {
+            const response = confirm('Deseja realmente excluir o filme?');
+            if (response) {
+                const id = e.target.dataset.id;
+                document.getElementById(id).remove();
+            }
+
+
+        }
+    });
+
     let dados = {
         titulo: '',
         categoria: '',
@@ -99,24 +117,25 @@
 
     const montaItem = () => {
 
-        const item = document.createElement('tr')
         const id = new Date().getTime();
 
-        item.insertAdjacentHTML('beforeEnd', `
+        const item = `
+                <tr id="${id}">
                     <td>${dados.titulo}</td>
                     <td>${dados.categoria}</td>
                     <td>${dados.ano}</td>
                     <td class="text-right col-2">
-                        <button class="btn btn-info" data-url="${dados.link}"> Acessar</button>
-                        <button class="btn btn-danger" data-id="${id}"> Deletar</button>
-                    </td>`
-                )
+                        <button class="btn btn-info acessarFilme" data-url="${dados.link}"> Acessar</button>
+                        <button class="btn btn-danger excluirFilme" data-id="${id}"> Deletar</button>
+                    </td>
+                    </tr>`;
 
-                return item;
+
+        return item;
     }
 
-    const cadastrar = ()=>{
-        document.getElementById('lista_filmes').appendChild(montaItem());
+    const cadastrar = () => {
+        document.getElementById('lista_filmes').insertAdjacentHTML('beforeEnd', montaItem());
         dados = {};
     }
 </script>
