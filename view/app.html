@@ -124,7 +124,7 @@
                     <td>${dados.titulo}</td>
                     <td>${dados.categoria}</td>
                     <td>${dados.ano}</td>
-                    <td class="text-right col-2">
+                    <td class="text-right ">
                         <button class="btn btn-info acessarFilme" data-url="${dados.link}"> Acessar</button>
                         <button class="btn btn-danger excluirFilme" data-id="${id}"> Deletar</button>
                     </td>
@@ -135,6 +135,19 @@
     }
 
     const cadastrar = () => {
+
+        if (
+            dados.titulo == ''
+            || categoria == '',
+            || ano == 0,
+            || link == '',
+    
+     ) {
+            alert('Preencha todos os campos');
+        }
+
+
+
         document.getElementById('lista_filmes').insertAdjacentHTML('beforeEnd', montaItem());
         dados = {};
     }
